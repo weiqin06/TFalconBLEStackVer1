@@ -4,7 +4,7 @@
 
 SHELL = cmd.exe
 
-CG_TOOL_ROOT := C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5
+CG_TOOL_ROOT := C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.7
 
 GEN_OPTS__FLAG := 
 GEN_CMDS__FLAG := 
@@ -187,14 +187,14 @@ main-build: TFalconBLEStackVer1.out
 TFalconBLEStackVer1.out: $(OBJS) $(GEN_CMDS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: ARM Linker'
-	"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/bin/armcl" --cmd_file="C:/ti/simplelink/ble_cc26xx_2_01_01_44627/Projects/ble/SensorTag/CC26xx/CCS/SensorTagStack/../../IAR/Stack/CC2650/../../../../../config/buildComponents.opt" --cmd_file="C:/ti/simplelink/ble_cc26xx_2_01_01_44627/Projects/ble/SensorTag/CC26xx/CCS/SensorTagStack/../../IAR/Stack/CC2650/buildConfig.opt"  -mv7M3 --code_state=16 --abi=eabi -me -O4 --opt_for_speed=0 --define=CC26XX --define=USE_ICALL --define=FLASH_ROM_BUILD --define=POWER_SAVING --define=GATT_NO_CLIENT --define=NO_OSAL_SNV --define=INCLUDE_AES_DECRYPT --define=xPM_DISABLE_PWRDOWN --define=xTESTMODES --define=xTEST_BLEBOARD --define=OSAL_CBTIMER_NUM_TASKS=1 --define=xDEBUG --define=HALNODEBUG --define=xDEBUG_GPIO --define=xDEBUG_ENC --define=xDEBUG_SW_TRACE --define=NEAR_FUNC= --define=DATA= --define=OSAL_MAX_NUM_PROXY_TASKS=8 --define=CC26XXWARE --define=ccs --define=DEBUG --diag_wrap=off --diag_suppress=48 --diag_warning=225 --display_error_number -z -m"TFalconBLEStackVer1.map" --heap_size=0 --stack_size=256 -i"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/lib" -i"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include" --reread_libs --display_error_number --diag_suppress=16002-D --diag_suppress=10325-D --diag_suppress=10247-D --diag_wrap=off --warn_sections --xml_link_info="TFalconBLEStackVer1_linkInfo.xml" --entry_point=startup_entry --rom_model --unused_section_elimination=on --compress_dwarf=on -o "TFalconBLEStackVer1.out" $(ORDERED_OBJS)
+	"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.7/bin/armcl" --cmd_file="C:/ti/simplelink/ble_cc26xx_2_01_01_44627/Projects/ble/SensorTag/CC26xx/CCS/SensorTagStack/../../IAR/Stack/CC2650/../../../../../config/buildComponents.opt" --cmd_file="C:/ti/simplelink/ble_cc26xx_2_01_01_44627/Projects/ble/SensorTag/CC26xx/CCS/SensorTagStack/../../IAR/Stack/CC2650/buildConfig.opt"  -mv7M3 --code_state=16 --abi=eabi -me -O4 --opt_for_speed=0 --define=CC26XX --define=USE_ICALL --define=FLASH_ROM_BUILD --define=POWER_SAVING --define=GATT_NO_CLIENT --define=NO_OSAL_SNV --define=INCLUDE_AES_DECRYPT --define=xPM_DISABLE_PWRDOWN --define=xTESTMODES --define=xTEST_BLEBOARD --define=OSAL_CBTIMER_NUM_TASKS=1 --define=xDEBUG --define=HALNODEBUG --define=xDEBUG_GPIO --define=xDEBUG_ENC --define=xDEBUG_SW_TRACE --define=NEAR_FUNC= --define=DATA= --define=OSAL_MAX_NUM_PROXY_TASKS=8 --define=CC26XXWARE --define=ccs --define=DEBUG --diag_wrap=off --diag_suppress=48 --display_error_number --diag_warning=225 -z -m"TFalconBLEStackVer1.map" --heap_size=0 --stack_size=256 -i"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.7/lib" -i"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.7/include" --reread_libs --display_error_number --diag_wrap=off --warn_sections --diag_suppress=16002-D --diag_suppress=10325-D --diag_suppress=10247-D --xml_link_info="TFalconBLEStackVer1_linkInfo.xml" --entry_point=startup_entry --rom_model --compress_dwarf=on --unused_section_elimination=on -o "TFalconBLEStackVer1.out" $(ORDERED_OBJS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 	@$(MAKE) --no-print-directory post-build
 
 TFalconBLEStackVer1.hex: $(EXE_OUTPUTS)
 	@echo 'Invoking: ARM Hex Utility'
-	"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/bin/armhex"  -o "TFalconBLEStackVer1.hex" $(EXE_OUTPUTS__QUOTED)
+	"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.7/bin/armhex"  -o "TFalconBLEStackVer1.hex" $(EXE_OUTPUTS__QUOTED)
 	@echo 'Finished building: $@'
 	@echo ' '
 	@$(MAKE) --no-print-directory post-build
@@ -212,7 +212,7 @@ pre-build:
 	-@echo ' '
 
 post-build:
-	-"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/bin/armhex" -order MS --memwidth=8 --romwidth=8 --intel -o "TFalconBLEStackVer1.hex" "TFalconBLEStackVer1.out"
+	-"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.7/bin/armhex" -order MS --memwidth=8 --romwidth=8 --intel -o "TFalconBLEStackVer1.hex" "TFalconBLEStackVer1.out"
 	-"C:\Program Files (x86)\Texas Instruments\Boundary\Boundary.exe" -prj "ccs" -chip "CC2640" -lcf "C:/ti/simplelink/ble_cc26xx_2_01_01_44627/Projects/ble/SensorTag/CC26xx/CCS/SensorTagStack/../../IAR/Stack/CC2650/../../../../../common/cc26xx/CCS/cc26xx_ble_stack.cmd" -map "C:/Users/weiqi_000/WS_TFalcon/Projects/TFalconBLEStackVer1/FlashROM/TFalconBLEStackVer1.map" -xml "C:\Program Files (x86)\Texas Instruments\Boundary\BoundaryConfig.xml" -cc "C:/ti/simplelink/ble_cc26xx_2_01_01_44627/Projects/ble/SensorTag/CC26xx/CCS/SensorTagStack/../../IAR/Stack/CC2650/../../../CCS/Config/ccsCompilerDefines.bcfg" -lnk "C:/ti/simplelink/ble_cc26xx_2_01_01_44627/Projects/ble/SensorTag/CC26xx/CCS/SensorTagStack/../../IAR/Stack/CC2650/../../../CCS/Config/ccsLinkerDefines.cmd"
 	-@echo ' '
 
