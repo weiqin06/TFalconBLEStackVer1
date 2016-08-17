@@ -38,7 +38,7 @@
 									<listOptionValue builtIn="false" value="FLASH_ROM_BUILD"/>
 									<listOptionValue builtIn="false" value="POWER_SAVING"/>
 									<listOptionValue builtIn="false" value="GATT_NO_CLIENT"/>
-									<listOptionValue builtIn="false" value="NO_OSAL_SNV"/>
+									<listOptionValue builtIn="false" value="xNO_OSAL_SNV"/>
 									<listOptionValue builtIn="false" value="INCLUDE_AES_DECRYPT"/>
 									<listOptionValue builtIn="false" value="xPM_DISABLE_PWRDOWN"/>
 									<listOptionValue builtIn="false" value="xTESTMODES"/>

@@ -11,5 +11,5 @@
 	<createSlaveProjects value=""/>
 	<connection value="common/targetdb/connections/TIXDS110_Connection.xml"/>
 	<isTargetManual value="false"/>
-	<origin value="C:/ti/simplelink/ble_cc26xx_2_01_01_44627/Projects/ble/SensorTag/CC26xx/CCS/SensorTagStack"/>
+	<origin value="C:/Users/wqin/Documents/GitHub/TFalconBLEStackVer1"/>
 </projectOptions>

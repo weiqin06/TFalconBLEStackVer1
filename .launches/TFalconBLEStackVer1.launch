@@ -5,7 +5,7 @@
 <stringAttribute key="com.ti.ccstudio.debug.debugModel.ATTR_PROGRAM.Texas Instruments XDS110 USB Debug Probe/Cortex_M3_0" value="${build_artifact:TFalconBLEStackVer1}"/>
 <stringAttribute key="com.ti.ccstudio.debug.debugModel.ATTR_PROJECT.Texas Instruments XDS110 USB Debug Probe/Cortex_M3_0" value="TFalconBLEStackVer1"/>
 <stringAttribute key="com.ti.ccstudio.debug.debugModel.ATTR_TARGET_CONFIG" value="${target_config_active_default:TFalconBLEStackVer1}"/>
-<stringAttribute key="com.ti.ccstudio.debug.debugModel.MRU_PROGRAM.Texas Instruments XDS110 USB Debug Probe/Cortex_M3_0" value="C:/Users\weiqi_000\WS_TFalcon\Projects\TFalconBLEStackVer1\FlashROM\TFalconBLEStackVer1.out"/>
+<stringAttribute key="com.ti.ccstudio.debug.debugModel.MRU_PROGRAM.Texas Instruments XDS110 USB Debug Probe/Cortex_M3_0" value="C:/Users\wqin\Documents\workspace\TFalconBLEStackVer1\FlashROM\TFalconBLEStackVer1.out"/>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
 <listEntry value="/TFalconBLEStackVer1"/>
 </listAttribute>
